@@ -18,9 +18,6 @@ PokemonCard.propTypes = {
     }).isRequired
 }
 
-
-
-
 }
 
 
