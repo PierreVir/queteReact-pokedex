@@ -16,10 +16,7 @@ function App() {
         name:"mew",
     }
   ];
-
   return (
-
-    
     <>
       <div>
         <PokemonCard pokemon={pokemon}/>
@@ -27,7 +24,5 @@ function App() {
     </>
   );
 }
-
-
 
 export default App;
