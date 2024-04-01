@@ -7,18 +7,18 @@ function PokemonCard({pokemon}){
 
     return (
 
-    <figure><img src={pokemon[0].imgSrc } alt={pokemon[0].name}/>
-    <figcaption>{pokemon[0].name}</figcaption></figure>
+    <figure>
+        {pokemon.imgSrc ? <img src={pokemon.imgSrc} alt={pokemon.name} /> : <p>????</p>}
+    <figcaption>{pokemon.name}</figcaption></figure>
 )
+
+}
 
 PokemonCard.propTypes = {
     pokemon: PropTypes.shape({
         name: PropTypes.string.isRequired,
-        imgSrc: PropTypes.object,
+        imgSrc: PropTypes.string,
     }).isRequired
 }
-
-}
-
 
 export default PokemonCard;
